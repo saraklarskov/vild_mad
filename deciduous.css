@@ -7,23 +7,50 @@
   z-index: 1;
 }
 
-.forgrund {
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  z-index: 2;
-  width: 65%;
-}
-
 .text {
   position: absolute;
-  top: 65%;
+  top: 40%;
   left: 48%;
   transform: translate(-50%, -50%);
   z-index: 3;
   color: white;
-  width: 90%;
+  width: 85%;
   text-align: center;
-  font-size: 30px;
+}
+
+.text h1 {
+  font-size: 40px;
   font-weight: bolder;
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 1.8rem;
+  margin-top: 40px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.cate {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.names,
+.seasons,
+.a_z {
+  background-color: #606c38;
+  color: #ffffff;
+  border-radius: 60px;
+  width: 80px;
+  height: 40px;
 }

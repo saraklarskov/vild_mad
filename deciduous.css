@@ -109,7 +109,7 @@ footer {
 .partner_pic_2 {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
@@ -128,6 +128,18 @@ footer {
 }
 
 .partner p,
-.project p {
+.project p,
+.sociale_medier {
   text-align: center;
+}
+
+.social_pic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.social_pic {
+  width: 60%;
 }

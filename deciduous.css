@@ -93,6 +93,7 @@ a {
 footer {
   background-color: #606c38;
   opacity: 40%;
+  margin-top: 20px;
 }
 
 .partner {
@@ -105,18 +106,25 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.partner_pic_2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .project {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-.partner img {
+.partner img,
+.partner_pic_2 img {
   width: 55%;
 }
 
 .project img {
   width: 15%;
-  align-content: center;
 }
 
 .partner p,

@@ -2,9 +2,35 @@
   position: relative;
 }
 
-.baggrund {
+.background {
   position: relative;
   z-index: 1;
+}
+
+.foreground {
+  position: absolute;
+  top: -42px;
+  left: 257px;
+  z-index: 2;
+  width: 120px;
+}
+
+.foreground_2 {
+  position: absolute;
+  top: 370px;
+  left: 255px;
+  z-index: 2;
+  width: 140px;
+  transform: rotate(-45deg);
+  overflow: hidden;
+}
+
+.middleground {
+  position: absolute;
+  top: 390px;
+  left: 0px;
+  z-index: 2;
+  width: 120px;
 }
 
 .text {
@@ -138,8 +164,4 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-}
-
-.social_pic {
-  width: 60%;
 }

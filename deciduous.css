@@ -2,9 +2,33 @@
   position: relative;
 }
 
-.baggrund {
+.background {
   position: relative;
   z-index: 1;
+}
+
+.foreground {
+  position: absolute;
+  top: -50px;
+  left: 250px;
+  z-index: 2;
+  width: 120px;
+}
+
+.foreground_2 {
+  position: absolute;
+  top: 410px;
+  left: 0px;
+  z-index: 2;
+  width: 120px;
+}
+
+.foreground_3 {
+  position: absolute;
+  top: 250px;
+  left: 73px;
+  z-index: 2;
+  width: 300px;
 }
 
 .text {

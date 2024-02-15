@@ -5,6 +5,7 @@
 .background {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .foreground {
@@ -38,7 +39,7 @@
   transform: translate(-50%, -50%);
   z-index: 3;
   color: white;
-  width: 85%;
+  width: 83%;
   text-align: center;
 }
 
@@ -154,4 +155,61 @@ footer {
 .partner p,
 .project p {
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .background {
+    width: 400px;
+  }
+
+  .text {
+    left: 200px;
+    padding: 450px;
+  }
+
+  .foreground {
+    left: 1220px;
+    width: 200px;
+  }
+
+  .foreground_2,
+  .foreground_3 {
+    display: none;
+  }
+
+  .plants_container,
+  .plants_container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* En kolonne til overskriften, og en anden til resten af indholdet */
+    align-items: center; /* Centrerer indholdet lodret */
+  }
+
+  .plants_container h1,
+  .plants_2 {
+    grid-column: 2;
+  }
+
+  .cate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .names {
+    grid-column: 5;
+    grid-row: 1;
+  }
+
+  .seasons {
+    grid-column: 6;
+    grid-row: 1;
+  }
+
+  .a_z {
+    grid-column: 7;
+    grid-row: 1;
+  }
+
+  .plants_by {
+    grid-template-columns: 1fr 1fr;
+  }
 }

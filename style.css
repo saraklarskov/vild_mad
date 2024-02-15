@@ -25,6 +25,19 @@ body {
   background-color: #283618;
 }
 
+.header ul {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+li:hover {
+  transform: scale(1.2);
+}
+.header {
+  color: white;
+}
+
 /*BURGERMENU*/
 
 .navbar {

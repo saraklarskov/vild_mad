@@ -32,6 +32,10 @@ section {
   width: 140px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .foreground_3 {
   position: absolute;
   top: 380px;
@@ -42,7 +46,8 @@ section {
 }
 
 .loc,
-.sea {
+.sea,
+.facts {
   background-color: #606c38;
   color: #ffffff;
   border-radius: 60px;
@@ -68,6 +73,18 @@ section {
 
 .fact_p {
   font-size: 14px;
+}
+
+.season_list {
+  display: flex;
+  flex-direction: column; /* Stabler billeder under hinanden */
+  justify-content: center; /* Centrerer indholdet vandret */
+  align-items: center; /* Centrerer indholdet lodret */
+  gap: 20px;
+}
+
+.season_list img {
+  width: 80%;
 }
 
 /*FOOTER*/

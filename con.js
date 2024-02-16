@@ -30,6 +30,17 @@ function showItem(item) {
   const clone = template.cloneNode(true);
   clone.querySelector(".plants_by_1").querySelector("a").textContent =
     item.title;
+  if (item.sankelandskaber == "Decidous forest") {
+    clone
+      .querySelector(".plants_by_1")
+      .querySelector("a")
+      .classList.add(".remove");
+  } else {
+    clone
+      .querySelector(".plants_by_1")
+      .querySelector("a")
+      .classList.add(".show");
+  }
 
   document.querySelector("article").appendChild(clone);
 }

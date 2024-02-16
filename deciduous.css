@@ -74,7 +74,8 @@ a {
 
 /*PLANTER*/
 
-.plants_by_1 {
+.plants_by_1,
+.plants_by_2 {
   position: relative;
   margin: 10px;
 }

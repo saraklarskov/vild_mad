@@ -127,3 +127,11 @@ footer {
   width: 80%;
   margin: 20px;
 }
+
+.remove {
+  display: none;
+}
+
+.show {
+  display: block;
+}

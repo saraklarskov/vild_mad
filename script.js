@@ -16,8 +16,18 @@ fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
     },
 })
     .then(res=>res.json())
-    .then(showData);
+    .then(showItems);
 
-function showData(items){
-    console.log(items);
+function showItems(items) {
+  items.forEach(showItem)
+}
+
+function showItem(item){
+    console.log(item);
+
+    
+    const template = document.querySelector("template").content;
+    const clone = template.cloneNode(true);
+    clone.querySelector(".plants_by_1").querySelector("a").textContent = item.title
+    document.querySelector("article").appendChild(clone);
 }

@@ -3,32 +3,41 @@
 }
 
 .background {
-  position: relative;
-  z-index: 1;
+  width: 100%;
 }
 
 .foreground {
   position: absolute;
-  top: -50px;
-  left: 250px;
+  top: -45px;
+  left: 242px;
   z-index: 2;
   width: 120px;
 }
 
 .foreground_2 {
   position: absolute;
-  top: 410px;
-  left: 0px;
   z-index: 2;
   width: 120px;
+  top: 400px;
 }
 
 .foreground_3 {
   position: absolute;
-  top: 250px;
-  left: 73px;
   z-index: 2;
-  width: 300px;
+  width: 120px;
+  top: 450px;
+  left: 245px;
+}
+
+.text_felt {
+  position: relative;
+  top: -465px;
+  text-align: center;
+  z-index: 2;
+}
+
+.text_felt h1 {
+  font-size: 45px;
 }
 
 .text {
@@ -62,21 +71,20 @@ a {
   color: white;
 }
 
-.cate {
+.selector {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-top: 20px;
 }
+.plants_selector {
+  text-align: center;
+}
 
-.names,
-.seasons,
-.a_z {
+.selector h2 {
   background-color: #606c38;
-  color: #ffffff;
-  border-radius: 60px;
+  border-radius: 20px;
   width: 80px;
-  height: 40px;
 }
 
 .plants_by {

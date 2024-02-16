@@ -10,7 +10,7 @@ section {
   width: 230px;
 }
 
-.text {
+.name {
   position: absolute;
   top: 65%;
   left: 48%;
@@ -18,12 +18,9 @@ section {
   z-index: 3;
   color: white;
   text-align: center;
+  font-size: 30px;
 }
 
-.text h1 {
-  font-size: 60px;
-  font-weight: bolder;
-}
 .foreground_2 {
   position: absolute;
   top: 0px;

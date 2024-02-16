@@ -25,11 +25,14 @@ function showItems(items) {
 
 function showItem(item) {
   console.log(item);
+  console.log("hej");
 
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
+
   clone.querySelector(".plants_by_1").querySelector("a").textContent =
     item.title;
+
   if (item.sankelandskaber == "Decidous forest") {
     clone
       .querySelector(".plants_by_1")
@@ -43,4 +46,10 @@ function showItem(item) {
   }
 
   document.querySelector("article").appendChild(clone);
+
+  if (product.discount) {
+    copy.querySelector(".sale").textContent = product.discount + "%";
+  } else {
+    copy.querySelector(".sale").remove();
+  }
 }

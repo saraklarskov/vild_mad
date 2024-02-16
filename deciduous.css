@@ -98,3 +98,7 @@ a {
 .des a {
   font-size: 30px;
 }
+
+.remove{
+  display: none;
+}

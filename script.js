@@ -8,7 +8,25 @@ fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
   .then((res) => res.json())
   .then(showItems);
 
+function sammenlignTitler(a, b) {
+  const titleA = a.title.toUpperCase();
+  const titleB = b.title.toUpperCase();
+
+  let sammenligning = 0;
+  if (titleA > titleB) {
+    sammenligning = 1;
+  } else if (titleA < titleB) {
+    sammenligning = -1;
+  }
+  return sammenligning;
+}
+
 function showItems(items) {
+  console.log("items er ", items);
+
+  // Sorter objekter array ved hjælp af sammenlignTitler funktionen
+  items.sort(sammenlignTitler);
+
   items.forEach(showItem);
 }
 

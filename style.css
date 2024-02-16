@@ -75,3 +75,55 @@ body {
   text-decoration: none;
   color: #fefae0;
 }
+
+/*FOOTER*/
+
+footer {
+  background-color: #606c38;
+  opacity: 40%;
+  align-items: center;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project img {
+  grid-row: 2;
+  grid-column: 2;
+  width: 60%;
+}
+
+.project p {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 20px;
+  text-align: center;
+}
+
+.partner p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.partner_pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.partner_pic img {
+  width: 80%;
+}
+
+.partner_pic_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partner_pic_2 img {
+  width: 80%;
+  margin: 20px;
+}

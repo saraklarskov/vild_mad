@@ -28,8 +28,13 @@ function showItem(item) {
 
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
+
   clone.querySelector(".plants_by_1").querySelector("a").textContent =
     item.title;
 
-  document.querySelector("article").appendChild(clone);
+  if (item.sankelandskaber == "Coniferous forest") {
+    clone.querySelector("section").remove();
+  } else {
+    document.querySelector("article").appendChild(clone);
+  }
 }

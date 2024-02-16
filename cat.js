@@ -32,13 +32,9 @@ function showItem(item) {
   clone.querySelector(".plants_by_1").querySelector("a").textContent =
     item.title;
 
-    if(item.sankelandskaber == "Coniferous forest"){
-        clone.querySelector("section").remove()
-
-    } else {
- document.querySelector("article").appendChild(clone);
-    }
-
-
- 
+  if (item.sankelandskaber == "Deciduous forest") {
+    clone.querySelector("section").remove();
+  } else {
+    document.querySelector("article").appendChild(clone);
+  }
 }

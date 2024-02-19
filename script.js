@@ -38,10 +38,12 @@ function showItem(item) {
 
   clone.querySelector(".plants_by_1").querySelector("a").textContent =
     item.title;
+  
+  clone.querySelector(".plants_by_1").querySelector("a").setAttribute("href", `plant.html?id=${item.id}`);
 
   if (item.sankelandskaber == "Coniferous forest") {
     clone.querySelector("section").remove();
   } else {
-    document.querySelector("article").appendChild(clone);
+    document.querySelector(".col_2").appendChild(clone);
   }
 }

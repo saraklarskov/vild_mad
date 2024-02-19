@@ -24,43 +24,55 @@
                 <div class="bar"></div>
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contact</a></li>
+
             </ul>
         </nav>
     </header>
-    <div class="section">
-        <img src="img/blok.webp" alt="">
-        <img src="img/dadelion.png" alt="" class="foreground">
-        <img src="img/stick.png" alt="" class="foreground_2">
-        <img src="img/flower_1.png" alt="" class="foreground_3">
-        <div class="name">
-            <h1>DANDELION</h1>
-        </div>
-    </div>
-
-    <div class="buttons">
-        <h2 class="sea">SEASONS</h2>
-        <h2 class="loc">LOCATIONS</h2>
-    </div>
-
-    <h1 class="fact">FACTS ABOUT DANDELIONS</h1>
-    <p class="fact_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto pariatur dolor iste. Vitae
-        mollitia quas
-        laudantium voluptate perspiciatis! Nihil deleniti suscipit debitis accusantium aliquam amet consequuntur
-        necessitatibus quod rem dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus numquam
-        cum aut? Cumque voluptatum, dicta odit ullam nemo cupiditate totam. Earum facere libero pariatur tenetur cum
-        reprehenderit ea, totam fuga!</p>
-
+        <article>
+            <div class="grid1">
+                <div class="section">
+                        <img src="img/stick.png" alt="" class="foreground_2">
+                        <img src="img/flower_1.png" alt="" class="foreground_3">
+                </div>
+                <h1 class="name">DANDELION</h1>
+                <img src="img/dadelion.png" alt="" id="profile_img">
+            </div>
+            <div class="buttons">
+                <button type="button" class="sea">SEASONS</button>
+                <button type="button" class="loc">LOCATIONS</button>
+            </div>
+            <div class="grid_maintext">
+                 <div>
+                    <h2>Description</h2>
+                    <p class="desc"></p>
+                </div>
+                <div>
+                    <h2>How to spot:</h2>
+                    <p class="how_to_spot"></p>
+                </div>
+                <div>
+                    <h2>How to pick:</h2>
+                    <p class="how_to_pick"></p>
+                </div>
+                <div id="where">
+                    <h2>Where to find:</h2>
+                    <p class="where_to_find"></p>
+                </div>
+                <div id="when">
+                    <h2>When to find:</h2>
+                    <p class="when_to_find"></p>
+                </div>
+                <div class="grid1-1-1-1"></div>
+            </div>
+        </article>
     <footer>
         <div class="foot">
             <div class="project">
                 <p>A project initiated by</p>
                 <img src="img/mad.png" alt="">
             </div>
-
             <div class="partner">
                 <p>Developed in partnership with</p>
                 <div class="partner_pic">
@@ -77,8 +89,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script src="burgermenu.js"></script>
+    <script src="plant.js"></script>
 </body>
 
 </html>

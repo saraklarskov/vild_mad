@@ -43,6 +43,6 @@ function showItem(item) {
   if (item.sankelandskaber == "Deciduous forest") {
     clone.querySelector("section").remove();
   } else {
-    document.querySelector("article").appendChild(clone);
+    document.querySelector(".col_2").appendChild(clone);
   }
 }

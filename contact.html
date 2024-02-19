@@ -7,45 +7,62 @@
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <div class="indsend_indhold">
-      <form
-        class="indsend_indhold"
-        action="/submit"
-        method="post"
-        enctype="multipart/form-data"
-      >
-        Indsend dine fund
-        <label for="fornavn">Fornavn</label>
-        <input
-          placeholder="fx Jens"
-          type="text"
-          id="fornavn"
-          name="fornavn"
-          required
-        />
+    <header>
+      <nav class="navbar">
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="indsend_indhold">
+        <form
+          class="indsend_indhold"
+          action="/submit"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          Indsend dine fund
+          <label for="fornavn">Fornavn</label>
+          <input
+            placeholder="fx Jens"
+            type="text"
+            id="fornavn"
+            name="fornavn"
+            required
+          />
 
-        <label for="efternavn">Efternavn</label>
-        <input
-          placeholder="fx Jensen"
-          type="text"
-          id="efternavn"
-          name="efternavn"
-          required
-        />
+          <label for="efternavn">Efternavn</label>
+          <input
+            placeholder="fx Jensen"
+            type="text"
+            id="efternavn"
+            name="efternavn"
+            required
+          />
 
-        <label for="beskrivelse">Kort beskrivelse</label>
-        <input
-          placeholder="fx Jeg har fundet..."
-          type="text"
-          id="beskrivelse"
-          name="beskrivelse"
-          required
-        />
+          <label for="beskrivelse">Kort beskrivelse</label>
+          <input
+            placeholder="fx Jeg har fundet..."
+            type="text"
+            id="beskrivelse"
+            name="beskrivelse"
+            required
+          />
 
-        <label for="picture">Upload billede:</label>
-        <input type="file" id="picture" name="picture" accept="image/*" />
-        <input type="submit" value="submit" />
-      </form>
-    </div>
+          <label for="picture">Upload billede:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
   </body>
 </html>

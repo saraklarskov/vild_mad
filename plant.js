@@ -18,6 +18,16 @@ function showItem(item) {
   document.querySelector(".when_to_find" ).textContent = item[0].when_to_find;
   document.querySelector(".how_to_spot" ).textContent = item[0].how_to_spot;
   document.querySelector(".how_to_pick" ).textContent = item[0].how_to_pick;
+  document.querySelector(".sea").addEventListener("click", scrollSea)
+  document.querySelector(".loc").addEventListener("click", scrollLoc)
+
+
+  function scrollSea(){
+    document.querySelector("#when").scrollIntoView();
+  }
+   function scrollLoc(){
+    document.querySelector("#where").scrollIntoView();
+  }
     
   
   const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="burgermenu.js" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="deciduous.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="indsend_indhold">
+        <form
+          class="indsend_indhold"
+          action="/submit"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h1>Indsend dine fund</h1>
+          <label for="fornavn">Fornavn</label>
+          <input
+            placeholder="fx Jens"
+            type="text"
+            id="fornavn"
+            name="fornavn"
+            required
+          />
+
+          <label for="efternavn">Efternavn</label>
+          <input
+            placeholder="fx Jensen"
+            type="text"
+            id="efternavn"
+            name="efternavn"
+            required
+          />
+
+          <label for="beskrivelse">Kort beskrivelse</label>
+          <input
+            placeholder="fx Jeg har fundet..."
+            type="text"
+            id="beskrivelse"
+            name="beskrivelse"
+            required
+          />
+
+          <label for="picture">Upload billede:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

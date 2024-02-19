@@ -25,5 +25,9 @@ form {
 .indsend_indhold {
   display: grid;
   gap: 3px;
-  width: 220px;
+  width: 25rem;
+  margin: 5px;
+}
+h1 {
+  font-size: 1rem;
 }

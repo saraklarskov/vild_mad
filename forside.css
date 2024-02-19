@@ -9,12 +9,7 @@
   font-size: 4rem;
   position: relative;
   top: -12vw;
-}
-
-.blok_forside {
-  position: relative;
-  width: 50%;
-  top: -20px;
+  z-index: 2;
 }
 
 .skove {
@@ -24,6 +19,10 @@
   gap: 10px;
 }
 
+.lov_desk {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .skove {
     display: grid;
@@ -31,5 +30,14 @@
     margin-top: 100px;
     gap: 20px;
     padding: 0px 300px 0px 300px;
+  }
+
+  .løvskov {
+    display: none;
+  }
+
+  .lov_desk {
+    display: block;
+    height: 300px;
   }
 }

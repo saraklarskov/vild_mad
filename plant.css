@@ -142,7 +142,16 @@ h1 {
   gap: 20px;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 800px) {
+  .grid1-1-1-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+@media screen and (max-width: 400px) {
   .grid1-1-1-1{
   display: grid;
   grid-template-columns: 1fr;
@@ -178,6 +187,7 @@ h1 {
     .grid1{
   margin-bottom: 20vw; 
 }
+
 
 }
 

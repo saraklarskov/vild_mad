@@ -4,19 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forside.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Forside</title>
 </head>
 
 <body>
-    <h1>VILD MAD</h1>
-    <p>Her skal der stå en masse spændende information eller noget</p>
+
+    <header>
+        <nav class="navbar">
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="img/lovskov.webp" alt="Løvskov">
+
+        <div class="forside_text">
+            <h1 class="forsideh1">VILD MAD</h1>
+            <img src="img/blok.webp" alt="" class="blok_forside">
+        </div>
+
+
+        <h2 class="forsideh2">Forrests</h2>
+
+        <div class="skove">
+            <img src="img/skov_1.webp" alt="Skov">
+            <img src="img/skov_2.webp" alt="Skov">
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="project">
+                <p>A project initiated by</p>
+                <img src="img/mad.png" alt="">
+            </div>
+
+            <div class="partner">
+                <p>Developed in partnership with</p>
+                <div class="partner_pic">
+                    <img src="img/byhøst.png" alt="">
+                    <img src="img/naturvejleder.png" alt="">
+                    <img src="img/gojoin.png" alt="">
+                    <img src="img/tombola.png" alt="">
+                </div>
+                <div class="partner_pic_2">
+                    <img src="img/friluft.png" alt="">
+                    <img src="img/supertusch.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="burgermenu.js"></script>

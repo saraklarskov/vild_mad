@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_15" data-name="Layer 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 506 506">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 0px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="253" cy="253" r="253"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <image width="2000" height="1333" transform="translate(-109) scale(.38)" xlink:href="../../skov_1.jpeg"/>
+  </g>
+</svg>

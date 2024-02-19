@@ -1,0 +1,35 @@
+.forsideh2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.forsideh1 {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  top: -12vw;
+}
+
+.blok_forside {
+  position: relative;
+  width: 50%;
+  top: -20px;
+}
+
+.skove {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+@media (min-width: 800px) {
+  .skove {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    gap: 20px;
+    padding: 0px 300px 0px 300px;
+  }
+}

@@ -2,6 +2,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
+  margin-top: -200px;
 }
 
 .forsideh1 {
@@ -21,6 +22,14 @@
 
 .lov_desk {
   display: none;
+}
+
+.foreground_forside {
+  position: relative;
+  top: -56vw;
+  transform: rotate(90deg);
+  width: 50%;
+  left: 85px;
 }
 
 @media (min-width: 800px) {
@@ -45,5 +54,16 @@
   .forsideh1 {
     top: -70px;
     font-size: 100px;
+  }
+
+  .foreground_forside {
+    top: -22vw;
+    transform: rotate(90deg);
+    width: 19%;
+    left: 575px;
+  }
+
+  .forsideh2 {
+    margin-top: -342px;
   }
 }

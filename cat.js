@@ -23,7 +23,8 @@ function fetchData() {
   fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
     method: "GET",
     headers: {
-      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxYXBvYXZldmlseXJrZGtlem13Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4NDIzNzMsImV4cCI6MjAyMzQxODM3M30._5AZFrfvIxiCfPmfJg0T0chsj0vkiMa_Od63AQQCg3c",
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxYXBvYXZldmlseXJrZGtlem13Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4NDIzNzMsImV4cCI6MjAyMzQxODM3M30._5AZFrfvIxiCfPmfJg0T0chsj0vkiMa_Od63AQQCg3c",
     },
   })
     .then((res) => res.json())
@@ -31,9 +32,8 @@ function fetchData() {
 }
 
 function setEventListeners() {
-  document.querySelector("#month").addEventListener("change", showItems)
+  document.querySelector("#month").addEventListener("change", showItems);
 }
-
 
 function sammenlignTitler(a, b) {
   const titleA = a.title.toUpperCase();
@@ -53,9 +53,8 @@ function saveData(items) {
   showItems();
 }
 
-
 function showItems(items) {
- document.querySelector(".col_2").innerHTML = "";
+  document.querySelector(".col_2").innerHTML = "";
   let filteredItems;
 
   filteredItems = filterItems(globalItems);
@@ -68,13 +67,13 @@ function showItems(items) {
 function filterItems(items) {
   let selectedMonth = document.querySelector("#month").value;
 
-  if(selectedMonth !== "-1") {
-      return items.filter(item => item.months.some(month => month === selectedMonth));
+  if (selectedMonth !== "-1") {
+    return items.filter((item) =>
+      item.months.some((month) => month === selectedMonth)
+    );
   }
   return items;
 }
-
-
 
 function showItem(item) {
   console.log(item);
@@ -87,6 +86,9 @@ function showItem(item) {
     
     clone.querySelector(".plants_by_1").querySelector("a").setAttribute("href", `plant.html?id=${item.id}`);
 
+
+  clone.querySelector(".plants_by_1").querySelector("img").src =
+    item.profile_image;
 
   if (item.sankelandskaber == "Deciduous forest") {
     clone.querySelector("section").remove();

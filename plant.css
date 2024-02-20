@@ -133,10 +133,28 @@ h1 {
   gap: 20px;
 }
 
+.icon_grid {
+  display: flex;
+  align-items: center;
+}
+.icon_container {
+  margin-right: 15px;
+}
+.icon_grid img {
+  width: 90px;
+  height: 90px;
+}
+.grid_maintext {
+  margin-left: 10%;
+}
+
 @media screen and (max-width: 800px) {
   .grid1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .grid_maintext {
+    margin-left: 0%;
   }
 }
 @media screen and (max-width: 400px) {

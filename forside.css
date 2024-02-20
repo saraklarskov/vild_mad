@@ -30,6 +30,10 @@
   left: 85px;
 }
 
+.skov:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 800px) {
   .skove {
     display: grid;

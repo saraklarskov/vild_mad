@@ -1,4 +1,4 @@
-fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
+/* fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
   method: "GET",
   headers: {
     apikey:
@@ -7,8 +7,34 @@ fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
 })
   .then((res) => res.json())
   .then(showItems);
-
+ */
 // Funktion til at sortere efter title ejendommen
+
+window.addEventListener("load", onLoad);
+
+let globalItems;
+
+async function onLoad() {
+  setEventListeners();
+  fetchData();
+}
+
+function fetchData() {
+  fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxYXBvYXZldmlseXJrZGtlem13Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4NDIzNzMsImV4cCI6MjAyMzQxODM3M30._5AZFrfvIxiCfPmfJg0T0chsj0vkiMa_Od63AQQCg3c",
+    },
+  })
+    .then((res) => res.json())
+    .then(saveData);
+}
+
+function setEventListeners() {
+  document.querySelector("#month").addEventListener("change", showItems)
+}
+
+
 function sammenlignTitler(a, b) {
   const titleA = a.title.toUpperCase();
   const titleB = b.title.toUpperCase();
@@ -22,14 +48,33 @@ function sammenlignTitler(a, b) {
   return sammenligning;
 }
 
+function saveData(items) {
+  globalItems = items;
+  showItems();
+}
+
+
 function showItems(items) {
-  console.log("items er ", items);
+ document.querySelector(".col_2").innerHTML = "";
+  let filteredItems;
+
+  filteredItems = filterItems(globalItems);
 
   // Sorter objekter array ved hjælp af sammenlignTitler funktionen
-  items.sort(sammenlignTitler);
-
-  items.forEach(showItem);
+  filteredItems.sort(sammenlignTitler);
+  filteredItems.forEach(showItem);
 }
+
+function filterItems(items) {
+  let selectedMonth = document.querySelector("#month").value;
+
+  if(selectedMonth !== "-1") {
+      return items.filter(item => item.months.some(month => month === selectedMonth));
+  }
+  return items;
+}
+
+
 
 function showItem(item) {
   console.log(item);

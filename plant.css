@@ -41,8 +41,8 @@ section {
   display: inline-block;
   margin: 10px;
   border-radius: 50%;
-  width: 150px; /* Set width and height to the same value */
-  height: 150px;
+  width: 80px;
+  height: 80px;
   padding-top: 4vw;
   background-color: #606c38; /* Red color */
   justify-content: center;
@@ -136,6 +136,7 @@ h1 {
 .icon_grid {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .icon_container {
   margin-right: 15px;
@@ -156,11 +157,15 @@ h1 {
   .grid_maintext {
     margin-left: 0%;
   }
+
+  .icon_grid p {
+    line-height: 1.7rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .grid1-1-1-1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 300px) {
@@ -207,6 +212,28 @@ h1 {
 
   .name {
     margin-top: 60px;
+  }
+
+  .icon_grid {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .icon_grid p {
+    width: 600px;
+    line-height: 1.7rem;
+  }
+
+  .month-name {
+    width: 150px;
+    height: 150px;
+  }
+  .grid1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
   }
 }
 

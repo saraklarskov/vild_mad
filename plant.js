@@ -35,7 +35,7 @@ function showItem(item) {
     // Create an image element for the months
     item[0].months.forEach((month) => {
         const h2 = document.createElement("h2");
-        h2.textContent = monthNames[parseInt(month)]; // Subtract 1 from the month number to get the correct index in the monthNames array
+        h2.textContent = monthNames[parseInt(month)]; 
         h2.className = "month-name"; // Add a class to the h2 element
 
 

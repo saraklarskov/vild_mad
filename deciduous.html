@@ -55,11 +55,28 @@
         <h1>PLANTS</h1>
         <h2>SORTED BY</h2>
         <div class="selector">
-            <h2 class="season_button">season</h2>
+        <div>
+        <label for="month"></label>
+        <select id="month" name="month">
+            <option value="-1">Select month</option>
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+        </select>
+    </div>
+    <div id="items-container"></div>
             <h2 class="alphabetical_button">a-z</h2>
         </div>
     </div>
-
     <article class="plants_by">
         <div class="col_1"></div>
         <div class="col_2"></div>
@@ -72,7 +89,6 @@
             </section>
         </template>
     </article>
-
 
     <footer>
         <div class="foot">

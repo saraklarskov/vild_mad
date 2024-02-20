@@ -64,6 +64,7 @@ main {
   background-color: #283618;
   width: 50%;
   z-index: 10;
+  text-transform: uppercase;
 }
 
 .menu.show {

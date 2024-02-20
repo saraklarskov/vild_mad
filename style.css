@@ -70,6 +70,7 @@ main {
 .menu.show {
   display: flex;
   flex-direction: column;
+  z-index: 200  ;
 }
 
 .menu li {
@@ -142,20 +143,17 @@ footer {
   display: block;
 }
 
-#month{
-   display: inline-block;
-    background-color: #606c38;
-    border-radius: 20px;
-    width: 100%;
-    padding: 0.5vw;
-    background-color:#606c38;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+#month {
+  display: inline-block;
+  background-color: #606c38;
+  border-radius: 20px;
+  width: 100%;
+  padding: 0.5vw;
+  background-color: #606c38;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
-
-
-
 
 @media (min-width: 800px) {
   footer {

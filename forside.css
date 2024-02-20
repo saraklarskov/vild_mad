@@ -2,15 +2,12 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-  margin-top: -200px;
 }
 
 .forsideh1 {
   text-align: center;
   font-size: 4rem;
-  position: relative;
-  top: -12vw;
-  z-index: 2;
+  z-index: 99;
 }
 
 .skove {
@@ -18,6 +15,7 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
   gap: 10px;
+  padding-bottom: 80px;
 }
 
 .lov_desk {
@@ -38,7 +36,7 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 100px;
     gap: 20px;
-    padding: 0px 300px 0px 300px;
+    padding: 0px 300px 103px 300px;
   }
 
   .løvskov {
@@ -52,18 +50,8 @@
   }
 
   .forsideh1 {
-    top: -70px;
-    font-size: 100px;
-  }
-
-  .foreground_forside {
-    top: -22vw;
-    transform: rotate(90deg);
-    width: 19%;
-    left: 575px;
-  }
-
-  .forsideh2 {
-    margin-top: -342px;
+    position: relative;
+    top: -344px;
+    font-size: 10rem;
   }
 }

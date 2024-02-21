@@ -216,4 +216,33 @@ footer {
   #logo {
     display: none;
   }
+  /* FOOTER */
+}
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+form {
+  display: grid;
+  gap: 18px;
+  width: 200px;
+  margin: 20px;
+}
+
+.nyhedsbrev {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+  width: 100%;
+  place-items: center;
+  max-width: 600px;
+  color: white;
+}
+.footer_flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }

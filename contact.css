@@ -47,6 +47,10 @@ input#beskrivelse {
   color: black;
 }
 
+.indsend_indhold_1 h1 {
+  text-transform: uppercase;
+}
+
 @media (min-width: 800px) {
   main {
     height: 100vh;

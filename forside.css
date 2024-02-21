@@ -1,4 +1,3 @@
-
 .forsideh2 {
   text-align: center;
   text-transform: uppercase;
@@ -22,17 +21,16 @@
   padding-bottom: 80px;
 }
 
-.skove :first-child{
+.skove :first-child {
   justify-self: center;
 }
 
-.skove :nth-child(2){
+.skove :nth-child(2) {
   justify-self: center;
 }
-.skove img{
+.skove img {
   width: 25vw;
   border-radius: 50%;
-
 }
 
 .foreground_forside {
@@ -43,34 +41,50 @@
   left: 85px;
 }
 
-.løvskov{
+.løvskov {
   width: 96vw; /* 100% of the viewport width */
   height: 40vw;
   padding-left: 3vw;
   padding-right: 3vw;
   object-fit: cover;
   margin-bottom: 30px;
-
 }
 
- @media (min-width: 800px) {
- .skove img{
-  width: 20vw;
-  border-radius: 50%;
-
+@media (min-width: 800px) {
+  .skove img {
+    width: 20vw;
+    border-radius: 50%;
+  }
+  .skove {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    justify-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
-.skove {
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
-  padding-bottom: 80px;
-  justify-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  gap: 18px;
+  width: 200px;
+  margin: 20px;
 }
 
-} 
-
-
-
-
+.nyhedsbrev {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+  width: 100%;
+  place-items: center;
+  max-width: 600px;
+  color: white;
+}

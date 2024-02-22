@@ -61,7 +61,6 @@ main {
   top: 60px;
   left: 0;
   background-color: #283618;
-  width: 50%;
   z-index: 10;
   text-transform: uppercase;
 }
@@ -73,8 +72,6 @@ main {
   position: absolute;
   margin-top: -10px;
 }
-
-
 
 .menu li {
   margin: 10px 20px;
@@ -89,7 +86,6 @@ main {
 
 footer {
   background-color: #606c38;
-  opacity: 40%;
   align-items: center;
   margin: 0;
 }
@@ -158,11 +154,10 @@ footer {
   font-size: 16px;
 }
 
-#logo{
+#logo {
   width: 110px;
   height: auto;
   margin-right: auto; /* Pushes the logo to the left */
-
 }
 
 @media (min-width: 800px) {
@@ -201,19 +196,52 @@ footer {
     display: none;
   }
 
-
-
   .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-start; /* Center menuen vandret */
     font-size: 20px;
-    gap: 20px;
   }
-  
+
+  .navbar {
+    background-color: #283618;
+    color: #fefae0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 @media (max-width: 800px) {
   #logo {
     display: none;
   }
+  /* FOOTER */
+}
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+form {
+  display: grid;
+  gap: 18px;
+  width: 200px;
+  margin: 20px;
+}
+
+.nyhedsbrev {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+  width: 100%;
+  place-items: center;
+  max-width: 600px;
+  color: white;
+}
+.footer_flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }

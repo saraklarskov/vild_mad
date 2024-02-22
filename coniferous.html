@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONIFEROUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="deciduous.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="deciduous.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu">
-                <img src="img/logo.png" alt="" id="logo">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="coniferous.html">Coniferous forest</a></li>
-                <li><a href="deciduous.html">Deciduous forest</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="menu">
+          <img src="img/logo.png" alt="" id="logo" />
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coniferous.html">Coniferous forest</a></li>
+          <li><a href="deciduous.html">Deciduous forest</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="grid1-1">
         <div>
@@ -93,30 +99,59 @@
 
 
     <footer>
+      <div class="footer_flex">
         <div class="foot">
-            <div class="project">
-                <p>A project initiated by</p>
-                <img src="img/mad.png" alt="">
+          <div class="project">
+            <p>A project initiated by</p>
+            <img src="img/mad.png" alt="" />
+          </div>
+          <div class="partner">
+            <p>Developed in partnership with</p>
+            <div class="partner_pic">
+              <img src="img/byhøst.png" alt="" />
+              <img src="img/naturvejleder.png" alt="" />
+              <img src="img/gojoin.png" alt="" />
+              <img src="img/tombola.png" alt="" />
             </div>
-
-            <div class="partner">
-                <p>Developed in partnership with</p>
-                <div class="partner_pic">
-                    <img src="img/byhøst.png" alt="">
-                    <img src="img/naturvejleder.png" alt="">
-                    <img src="img/gojoin.png" alt="">
-                    <img src="img/tombola.png" alt="">
-                </div>
-                <div class="partner_pic_2">
-                    <img src="img/friluft.png" alt="">
-                    <img src="img/supertusch.png" alt="">
-                </div>
+            <div class="partner_pic_2">
+              <img src="img/friluft.png" alt="" />
+              <img src="img/supertusch.png" alt="" />
             </div>
+          </div>
         </div>
+        <div class="nyhedsbrev">
+          <form>
+            Newsletter
+            <select name="liste">
+              <option value="">Choose profile</option>
+              <option value="studerende">Student</option>
+              <option value="underviser">Teacher</option>
+            </select>
+            <label for="navn">Full name</label>
+            <input
+              placeholder="e.g. Jens Jensen"
+              type="text"
+              id="navn"
+              name="navn"
+              required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              placeholder="e.g. jensjensen@gmail.com"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <script src="cat.js"></script>
     <script src="burgermenu.js"></script>
-</body>
-
+  </body>
 </html>

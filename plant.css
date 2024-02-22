@@ -27,6 +27,7 @@ section {
   gap: 3vw;
   text-align: center;
   padding-left:20vw;
+  place-items: center;
 }
 
 .dot {
@@ -146,9 +147,7 @@ h1 {
   width: 90px;
   height: 90px;
 }
-.grid_maintext {
-  margin-left: 10%;
-}
+
 
 @media screen and (max-width: 800px) {
   .grid1-1-1-1 {
@@ -164,11 +163,15 @@ h1 {
     line-height: 1.7rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .grid1-1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+  text-align: center;
+  place-items: center;
+}
+
 }
 @media screen and (min-width: 300px) {
   .foreground {
@@ -197,10 +200,6 @@ h1 {
     margin-bottom: 20vw;
   }
 
-  .grid1-1-1-1{
-    padding-left: 10vw;
-    gap: 2vw;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -239,9 +238,12 @@ h1 {
   .grid1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    place-items: center;
+    gap: 20px;
+    margin-right: 3vw;
+    margin-right: 20vw;
+
   }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -257,6 +259,9 @@ h1 {
   .grid1 {
     margin-bottom: 20vw;
   }
+  .grid_maintext {
+  margin-left: 10%;
+}
 }
 
 @media screen and (min-width: 1000px) {
@@ -271,10 +276,6 @@ h1 {
   }
   .grid1 {
     margin-bottom: 10vw;
-  }
-  .grid1-1-1-1{
-    margin-right: 20vw;
-    margin-left: 10vw ;
   }
 }
 

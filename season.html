@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DECIDUOUS</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="deciduous.css" />
+    <link rel="stylesheet" href="plant.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,73 +29,48 @@
           <div class="bar"></div>
         </div>
         <ul class="menu">
-          <img src="img/logo.png" alt="" id="logo" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="coniferous.html">Coniferous forest</a></li>
-          <li><a href="deciduous.html">Deciduous forest</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-
     <div class="section">
-      <img src="img/blok.webp" alt="blok" class="background" />
-      <img src="img/stick.png" alt="" class="foreground" />
-      <img src="img/stick_2.png" alt="" class="foreground_2" />
-      <img src="img/flower.png" alt="" class="foreground_3" />
-      <img src="img/flower_1.png" alt="" class="foreground_4" />
-    </div>
-
-    <div class="text_felt">
-      <h1 class="name">DECIDUOUS FOREST</h1>
-      <p class="information">
-        The tree canopy blocks out much of the sunlight in deciduous forests,
-        especially in summer, making the foraging opportunities rather sparse.
-        Spring and fall, however, offer many edible options, from early wild
-        herbs like ramson and sweet woodruff, to late summer's selection of
-        berries and edible flowers, to autumn's wealth of mushrooms, fruit, and
-        nuts.
-      </p>
-    </div>
-
-    <div class="plants_selector">
-      <h1>PLANTS</h1>
-      <h2>SORTED BY</h2>
-      <div class="selector">
-        <div>
-          <label for="month"></label>
-          <select id="month" name="month">
-            <option value="-1">Select month</option>
-            <option value="0">January</option>
-            <option value="1">February</option>
-            <option value="2">March</option>
-            <option value="3">April</option>
-            <option value="4">May</option>
-            <option value="5">June</option>
-            <option value="6">July</option>
-            <option value="7">August</option>
-            <option value="8">September</option>
-            <option value="9">October</option>
-            <option value="10">November</option>
-            <option value="11">December</option>
-          </select>
-        </div>
-        <div id="items-container"></div>
-        <h2 class="alphabetical_button">a-z</h2>
+      <img src="img/blok.webp" alt="" />
+      <img src="img/dadelion.png" alt="" class="foreground" />
+      <img src="img/stick.png" alt="" class="foreground_2" />
+      <img src="img/flower_1.png" alt="" class="foreground_3" />
+      <div class="text">
+        <h1>DANDELION</h1>
       </div>
     </div>
-    <article class="plants_by">
-      <div class="col_1"></div>
-      <div class="col_2"></div>
-      <template>
-        <section class="planter">
-          <div class="plants_by_1">
-            <img src="img/baggrund_1.png" alt="" class="billede_prøve" />
-            <div class="des"><a href="plant.html"></a></div>
-          </div>
-        </section>
-      </template>
-    </article>
+
+    <div class="buttons">
+      <h2 class="loc">LOCATIONS</h2>
+      <h2 class="facts">FACTS</h2>
+    </div>
+
+    <h1 class="season_explain">SEASONS WHERE THE DANDELION GROW</h1>
+
+    <section class="season_list">
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+    </section>
 
     <footer>
       <div class="footer_flex">
@@ -144,13 +119,12 @@
               required
             />
 
-            <button type="submit">Subscibe</button>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="burgermenu.js"></script>
   </body>
 </html>

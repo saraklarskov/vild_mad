@@ -4,7 +4,6 @@ window.addEventListener("load", onLoad);
 let globalItems;
 
  function onLoad() {
-  setEventListeners();
   fetchData();
 }
 
@@ -39,6 +38,8 @@ function sammenlignTitler(a, b) {
 
 function saveData(items) {
   globalItems = items;
+  setEventListeners();
+
   showItems();
 }
 

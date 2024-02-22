@@ -24,8 +24,9 @@ section {
 .grid1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 3vw;
   text-align: center;
+  padding-left:20vw;
 }
 
 .dot {
@@ -153,6 +154,7 @@ h1 {
   .grid1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 1vw;
   }
   .grid_maintext {
     margin-left: 0%;
@@ -193,6 +195,11 @@ h1 {
   }
   .grid1 {
     margin-bottom: 20vw;
+  }
+
+  .grid1-1-1-1{
+    padding-left: 10vw;
+    gap: 2vw;
   }
 }
 
@@ -264,6 +271,10 @@ h1 {
   }
   .grid1 {
     margin-bottom: 10vw;
+  }
+  .grid1-1-1-1{
+    margin-right: 20vw;
+    margin-left: 10vw ;
   }
 }
 

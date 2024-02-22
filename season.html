@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,14 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="forside.css" />
+    <link rel="stylesheet" href="plant.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
-    <title>HOME</title>
   </head>
 
   <body>
@@ -29,27 +29,48 @@
           <div class="bar"></div>
         </div>
         <ul class="menu">
-          <img src="img/logo.png" alt="" id="logo" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="coniferous.html">Coniferous forest</a></li>
-          <li><a href="deciduous.html">Deciduous forest</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <img src="img/lovskov.webp" alt="Løvskov" class="løvskov" />
-      <h1 class="forsideh1">VILD MAD</h1>
-      <h2 class="forsideh2">Forests</h2>
-      <div class="skove">
-        <a href="deciduous.html">
-          <img src="img/skov_1.webp" alt="Skov" class="skov"
-        /></a>
-        <a href="coniferous.html"
-          ><img src="img/skov_2.webp" alt="Skov" class="skov"
-        /></a>
+    <div class="section">
+      <img src="img/blok.webp" alt="" />
+      <img src="img/dadelion.png" alt="" class="foreground" />
+      <img src="img/stick.png" alt="" class="foreground_2" />
+      <img src="img/flower_1.png" alt="" class="foreground_3" />
+      <div class="text">
+        <h1>DANDELION</h1>
       </div>
-    </main>
+    </div>
+
+    <div class="buttons">
+      <h2 class="loc">LOCATIONS</h2>
+      <h2 class="facts">FACTS</h2>
+    </div>
+
+    <h1 class="season_explain">SEASONS WHERE THE DANDELION GROW</h1>
+
+    <section class="season_list">
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+      <div class="season_1">
+        <img src="img/baggrund_1.png" alt="" />
+        <p>SEASON</p>
+      </div>
+    </section>
 
     <footer>
       <div class="footer_flex">
@@ -103,7 +124,7 @@
         </div>
       </div>
     </footer>
-  </body>
 
-  <script src="burgermenu.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

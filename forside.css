@@ -50,20 +50,20 @@
   margin-bottom: 30px;
 }
 
- @media (min-width: 800px) {
- .skove img{
-  width: 20vw;
-  border-radius: 50%;
-
-}
-.skove {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
-  padding-bottom: 80px;
-  justify-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
+@media (min-width: 800px) {
+  .skove img {
+    width: 20vw;
+    border-radius: 50%;
+  }
+  .skove {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    justify-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 
   .skove_forside:hover {
     transform: scale(1.05);

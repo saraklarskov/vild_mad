@@ -1,20 +1,9 @@
-/* fetch("https://cqapoavevilyrkdkezmw.supabase.co/rest/v1/items", {
-  method: "GET",
-  headers: {
-    apikey:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxYXBvYXZldmlseXJrZGtlem13Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4NDIzNzMsImV4cCI6MjAyMzQxODM3M30._5AZFrfvIxiCfPmfJg0T0chsj0vkiMa_Od63AQQCg3c",
-  },
-})
-  .then((res) => res.json())
-  .then(showItems);
- */
-// Funktion til at sortere efter title ejendommen
 
 window.addEventListener("load", onLoad);
 
 let globalItems;
 
-async function onLoad() {
+ function onLoad() {
   setEventListeners();
   fetchData();
 }

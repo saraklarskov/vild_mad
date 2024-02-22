@@ -2,9 +2,9 @@ window.addEventListener("load", onLoad);
 
 let globalItems;
 
-async function onLoad() {
-  setEventListeners();
+ function onLoad() {
   fetchData();
+  
 }
 
 function fetchData() {
@@ -19,9 +19,6 @@ function fetchData() {
     .then(saveData);
 }
 
-function setEventListeners() {
-  document.querySelector("#month").addEventListener("change", showItems);
-}
 
 function sammenlignTitler(a, b) {
   const titleA = a.title.toUpperCase();
@@ -38,7 +35,12 @@ function sammenlignTitler(a, b) {
 
 function saveData(items) {
   globalItems = items;
+  setEventListeners();
   showItems();
+}
+
+function setEventListeners() {
+  document.querySelector("#month").addEventListener("change", showItems);
 }
 
 function showItems() {

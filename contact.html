@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CONTACT</title>
-  <link rel="stylesheet" href="contact.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coniferous.html">Coniferous forest</a></li>
+          <li><a href="deciduous.html">Deciduous forest</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="burger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <main>
+      <div class="indsend_indhold_1">
+        <form
+          class="indsend_indhold"
+          action="/submit"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h1>Send your plant to us</h1>
+          <label for="fornavn">First name</label>
+          <input
+            placeholder="e.g. Jens"
+            type="text"
+            id="fornavn"
+            name="fornavn"
+            required
+          />
+
+          <label for="efternavn">Surname</label>
+          <input
+            placeholder="e.g. Jensen"
+            type="text"
+            id="efternavn"
+            name="efternavn"
+            required
+          />
+
+          <label for="beskrivelse">Short Description</label>
+          <input
+            placeholder="e.g. I found..."
+            type="text"
+            id="beskrivelse"
+            name="beskrivelse"
+            required
+          />
+
+          <label for="picture">Upload picture:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+          <input type="submit" id="submit" value="submit" />
+        </form>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="coniferous.html">Coniferous forest</a></li>
-        <li><a href="deciduous.html">Deciduous forest</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="indsend_indhold_1">
-      <form class="indsend_indhold" action="/submit" method="post" enctype="multipart/form-data">
-        <h1>Send your plant to us</h1>
-        <label for="fornavn">First name</label>
-        <input placeholder="e.g. Jens" type="text" id="fornavn" name="fornavn" required />
-
-        <label for="efternavn">Surname</label>
-        <input placeholder="e.g. Jensen" type="text" id="efternavn" name="efternavn" required />
-
-        <label for="beskrivelse">Short Description</label>
-        <input placeholder="e.g. I found..." type="text" id="beskrivelse" name="beskrivelse" required />
-
-        <label for="picture">Upload picture:</label>
-        <input type="file" id="picture" name="picture" accept="image/*" />
-        <input type="submit" id="submit" value="submit" />
-      </form>
-    </div>
-    </div>
-  </main>
+    </main>
 
     <footer>
       <div class="footer_flex">
@@ -106,7 +133,6 @@
       </div>
     </footer>
 
-  <script src="burgermenu.js"></script>
-</body>
-
+    <script src="burgermenu.js"></script>
+  </body>
 </html>
